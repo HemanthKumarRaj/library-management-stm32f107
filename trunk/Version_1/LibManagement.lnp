@@ -1,0 +1,4 @@
+--cpu Cortex-M3 "startup_stm32f10x_cl.o" "misc.o" "stm32f10x_gpio.o" "stm32f10x_rcc.o" "stm32f10x_usart.o" "main.o" "usart_int.o" "system_stm32f10x.o" "core_cm3.o" "usart.o" "glcd.o" --strict --scatter "LibManagement.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\LibManagement.map" -o LibManagement.axf

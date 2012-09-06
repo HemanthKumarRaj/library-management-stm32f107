@@ -1,0 +1,15 @@
+glcd.o: Drivers\GLCD.c
+glcd.o: .\Libraries\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x.h
+glcd.o: C:\Keil\ARM\CMSIS\Include\core_cm3.h
+glcd.o: C:\Keil\ARM\RV31\Inc\stdint.h
+glcd.o: C:\Keil\ARM\CMSIS\Include\core_cmInstr.h
+glcd.o: C:\Keil\ARM\CMSIS\Include\core_cmFunc.h
+glcd.o: .\Libraries\CMSIS\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
+glcd.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_conf.h
+glcd.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h
+glcd.o: .\Libraries\CMSIS\DeviceSupport\ST\STM32F10x\stm32f10x.h
+glcd.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h
+glcd.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
+glcd.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
+glcd.o: Drivers\GLCD.h
+glcd.o: Drivers\font.h
