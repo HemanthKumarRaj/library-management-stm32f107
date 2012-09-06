@@ -1,0 +1,3021 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\LibManagement.uvproj
+Project File Date:  09/06/2012
+
+<h2>Output:</h2>
+Build target 'LibManagement'
+assembling startup_stm32f10x_cl.s...
+compiling misc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+compiling main.c...
+App\main.c(21): error:  #5: cannot open source input file "usart_interrupt.h": No such file or directory
+compiling usart_int.c...
+App\usart_int.c(1): warning:  #1-D: last line of file ends without a newline
+compiling system_stm32f10x.c...
+compiling core_cm3.c...
+compiling GLCD.c...
+compiling gsm.c...
+Drivers\gsm.c(1): warning:  #1-D: last line of file ends without a newline
+compiling RFID.c...
+Drivers\RFID.c(1): warning:  #1-D: last line of file ends without a newline
+Drivers\RFID.c(1): error:  #11-D: unrecognized preprocessing directive
+compiling smartcard.c...
+Drivers\smartcard.c(1): warning:  #1-D: last line of file ends without a newline
+Target not created
+Build target 'LibManagement'
+compiling main.c...
+.\Drivers\usart.h(32): warning:  #1-D: last line of file ends without a newline
+App\main.c(51): warning:  #1-D: last line of file ends without a newline
+compiling usart.c...
+Drivers\usart.h(32): warning:  #1-D: last line of file ends without a newline
+Drivers\usart.c(25): error:  #20: identifier "NVIC_InitTypeDef" is undefined
+Drivers\usart.c(26): error:  #20: identifier "USART_InitTypeDef" is undefined
+Drivers\usart.c(27): error:  #20: identifier "GPIO_InitTypeDef" is undefined
+Drivers\usart.c(32): warning:  #223-D: function "RCC_APB2PeriphClockCmd" declared implicitly
+Drivers\usart.c(32): error:  #20: identifier "RCC_APB2Periph_USART1" is undefined
+Drivers\usart.c(32): error:  #20: identifier "ENABLE" is undefined
+Drivers\usart.c(34): warning:  #223-D: function "RCC_APB1PeriphClockCmd" declared implicitly
+Drivers\usart.c(34): error:  #20: identifier "RCC_APB1Periph_USART2" is undefined
+Drivers\usart.c(37): error:  #20: identifier "RCC_APB2Periph_GPIOA" is undefined
+Drivers\usart.c(37): error:  #20: identifier "RCC_APB2Periph_AFIO" is undefined
+Drivers\usart.c(39): error:  #20: identifier "RCC_APB2Periph_GPIOD" is undefined
+Drivers\usart.c(46): warning:  #223-D: function "NVIC_PriorityGroupConfig" declared implicitly
+Drivers\usart.c(46): error:  #20: identifier "NVIC_PriorityGroup_0" is undefined
+Drivers\usart.c(48): error:  #20: identifier "USART1_IRQn" is undefined
+Drivers\usart.c(52): warning:  #223-D: function "NVIC_Init" declared implicitly
+Drivers\usart.c(56): error:  #20: identifier "USART2_IRQn" is undefined
+Drivers\usart.c(66): error:  #20: identifier "GPIO_Pin_10" is undefined
+Drivers\usart.c(67): error:  #20: identifier "GPIO_Mode_IN_FLOATING" is undefined
+Drivers\usart.c(68): warning:  #223-D: function "GPIO_Init" declared implicitly
+Drivers\usart.c(68): error:  #20: identifier "GPIOA" is undefined
+Drivers\usart.c(71): error:  #20: identifier "GPIO_Pin_9" is undefined
+Drivers\usart.c(72): error:  #20: identifier "GPIO_Mode_AF_PP" is undefined
+Drivers\usart.c(73): error:  #20: identifier "GPIO_Speed_50MHz" is undefined
+Drivers\usart.c(77): error:  #20: identifier "GPIO_Pin_6" is undefined
+Drivers\usart.c(79): error:  #20: identifier "GPIOD" is undefined
+Drivers\usart.c(82): error:  #20: identifier "GPIO_Pin_5" is undefined
+Drivers\usart.c(99): error:  #20: identifier "USART_WordLength_8b" is undefined
+Drivers\usart.c(100): error:  #20: identifier "USART_StopBits_1" is undefined
+Drivers\usart.c(101): error:  #20: identifier "USART_Parity_No" is undefined
+Drivers\usart.c(102): error:  #20: identifier "USART_HardwareFlowControl_None" is undefined
+Drivers\usart.c(103): error:  #20: identifier "USART_Mode_Rx" is undefined
+Drivers\usart.c(103): error:  #20: identifier "USART_Mode_Tx" is undefined
+Drivers\usart.c(105): warning:  #223-D: function "USART_Init" declared implicitly
+Drivers\usart.c(105): error:  #20: identifier "USART1" is undefined
+Drivers\usart.c(124): error:  #20: identifier "USART2" is undefined
+Drivers\usart.c(129): warning:  #223-D: function "USART_ITConfig" declared implicitly
+Drivers\usart.c(129): error:  #20: identifier "USART_IT_RXNE" is undefined
+Target not created
+Build target 'LibManagement'
+compiling usart.c...
+Drivers\usart.h(32): warning:  #1-D: last line of file ends without a newline
+Drivers\usart.c(146): error:  #65: expected a ";"
+Drivers\usart.c(169): warning:  #1-D: last line of file ends without a newline
+Target not created
+Build target 'LibManagement'
+compiling usart.c...
+Drivers\usart.h(32): warning:  #1-D: last line of file ends without a newline
+Drivers\usart.c(169): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=4880 RO-data=368 RW-data=40 ZI-data=1632  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 2 Warning(s).
+Build target 'LibManagement'
+compiling main.c...
+.\Drivers\usart.h(35): warning:  #1-D: last line of file ends without a newline
+App\main.c(51): warning:  #1-D: last line of file ends without a newline
+compiling usart.c...
+Drivers\usart.h(35): warning:  #1-D: last line of file ends without a newline
+Drivers\usart.c(172): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=4880 RO-data=368 RW-data=40 ZI-data=1632  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 4 Warning(s).
+Build target 'LibManagement'
+compiling main.c...
+compiling usart.c...
+linking...
+Program Size: Code=4880 RO-data=368 RW-data=40 ZI-data=1632  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LibManagement'
+compiling main.c...
+compiling usart.c...
+linking...
+Program Size: Code=4880 RO-data=368 RW-data=40 ZI-data=1632  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Rebuild target 'LibManagement'
+assembling startup_stm32f10x_cl.s...
+compiling misc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+compiling main.c...
+compiling usart_int.c...
+App\usart_int.c(1): warning:  #1-D: last line of file ends without a newline
+compiling system_stm32f10x.c...
+compiling core_cm3.c...
+compiling usart.c...
+linking...
+Program Size: Code=4880 RO-data=368 RW-data=40 ZI-data=1632  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 1 Warning(s).
+Build target 'LibManagement'
+compiling usart_int.c...
+linking...
+Program Size: Code=4880 RO-data=368 RW-data=40 ZI-data=1632  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Rebuild target 'LibManagement'
+assembling startup_stm32f10x_cl.s...
+compiling misc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+compiling main.c...
+compiling usart_int.c...
+compiling system_stm32f10x.c...
+compiling core_cm3.c...
+compiling usart.c...
+linking...
+Program Size: Code=4880 RO-data=368 RW-data=40 ZI-data=1632  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.216V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+compiling usart.c...
+Drivers\usart.c - 0 Error(s), 0 Warning(s).
+Build target 'LibManagement'
+linking...
+Program Size: Code=4872 RO-data=368 RW-data=40 ZI-data=1632  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.242V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling usart.c...
+linking...
+Program Size: Code=4880 RO-data=368 RW-data=40 ZI-data=1632  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.242V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling main.c...
+compiling usart_int.c...
+App\usart_int.c(31): error:  #70: incomplete type is not allowed
+compiling usart.c...
+Target not created
+Build target 'LibManagement'
+compiling usart_int.c...
+linking...
+Program Size: Code=5060 RO-data=368 RW-data=56 ZI-data=1680  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LibManagement'
+compiling usart_int.c...
+linking...
+Program Size: Code=5236 RO-data=368 RW-data=68 ZI-data=1732  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LibManagement'
+compiling usart_int.c...
+linking...
+Program Size: Code=5236 RO-data=368 RW-data=68 ZI-data=1732  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Rebuild target 'LibManagement'
+assembling startup_stm32f10x_cl.s...
+compiling misc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+compiling main.c...
+compiling usart_int.c...
+App\usart_int.h(27): error:  #20: identifier "uint16_t" is undefined
+App\usart_int.h(28): error:  #20: identifier "uint16_t" is undefined
+compiling system_stm32f10x.c...
+compiling core_cm3.c...
+compiling usart.c...
+Target not created
+Rebuild target 'LibManagement'
+assembling startup_stm32f10x_cl.s...
+compiling misc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+compiling main.c...
+compiling usart_int.c...
+compiling system_stm32f10x.c...
+compiling core_cm3.c...
+compiling usart.c...
+linking...
+Program Size: Code=5236 RO-data=368 RW-data=68 ZI-data=1732  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LibManagement'
+compiling main.c...
+App\main.c(50): warning:  #223-D: function "USART1_GetChar" declared implicitly
+App\main.c(52): warning:  #223-D: function "USART_Puts" declared implicitly
+linking...
+LibManagement.axf: Error: L6218E: Undefined symbol USART_Puts (referred from main.o).
+Target not created
+Build target 'LibManagement'
+compiling main.c...
+App\main.c(50): warning:  #223-D: function "USART1_GetChar" declared implicitly
+linking...
+Program Size: Code=5260 RO-data=368 RW-data=68 ZI-data=1732  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 1 Warning(s).
+Build target 'LibManagement'
+compiling main.c...
+linking...
+Program Size: Code=5260 RO-data=368 RW-data=68 ZI-data=1732  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.242V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling main.c...
+linking...
+Program Size: Code=5260 RO-data=368 RW-data=68 ZI-data=1732  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling main.c...
+App\main.c(45): warning:  #177-D: variable "data" was declared but never referenced
+compiling usart_int.c...
+compiling GLCD.c...
+linking...
+Program Size: Code=10964 RO-data=420 RW-data=5464 ZI-data=1968  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 1 Warning(s).
+Build target 'LibManagement'
+compiling main.c...
+App\main.c(47): warning:  #223-D: function "init_display" declared implicitly
+App\main.c(48): error:  #65: expected a ";"
+App\main.c(58): error:  #159: declaration is incompatible with previous "init_display" (declared at line 47)
+Target not created
+Build target 'LibManagement'
+compiling main.c...
+App\main.c(47): warning:  #223-D: function "init_display" declared implicitly
+App\main.c(58): error:  #159: declaration is incompatible with previous "init_display" (declared at line 47)
+Target not created
+Build target 'LibManagement'
+compiling main.c...
+App\main.c(34): warning:  #1295-D: Deprecated declaration init_display - give arg types
+linking...
+Program Size: Code=10968 RO-data=420 RW-data=5464 ZI-data=1968  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 1 Warning(s).
+Build target 'LibManagement'
+compiling main.c...
+linking...
+Program Size: Code=10968 RO-data=420 RW-data=5464 ZI-data=1968  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+Rebuild target 'LibManagement'
+assembling startup_stm32f10x_cl.s...
+compiling misc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+compiling main.c...
+compiling usart_int.c...
+compiling system_stm32f10x.c...
+compiling core_cm3.c...
+compiling usart.c...
+compiling GLCD.c...
+linking...
+Program Size: Code=10968 RO-data=420 RW-data=5464 ZI-data=1968  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.242V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling GLCD.c...
+linking...
+Program Size: Code=10968 RO-data=420 RW-data=5464 ZI-data=1968  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.235V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+linking...
+Program Size: Code=10968 RO-data=420 RW-data=5464 ZI-data=1968  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LibManagement'
+linking...
+Program Size: Code=10968 RO-data=420 RW-data=5464 ZI-data=1968  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.242V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling GLCD.c...
+Drivers\GLCD.c(295): error:  #165: too few arguments in function call
+Drivers\GLCD.c(296): error:  #165: too few arguments in function call
+Target not created
+Build target 'LibManagement'
+compiling GLCD.c...
+Drivers\GLCD.c(293): error:  #165: too few arguments in function call
+Drivers\GLCD.c(294): error:  #165: too few arguments in function call
+Target not created
+Build target 'LibManagement'
+compiling GLCD.c...
+linking...
+Program Size: Code=10968 RO-data=420 RW-data=5464 ZI-data=1968  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.242V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling main.c...
+linking...
+Program Size: Code=10964 RO-data=420 RW-data=5464 ZI-data=1968  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Rebuild target 'LibManagement'
+assembling startup_stm32f10x_cl.s...
+compiling misc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+compiling main.c...
+compiling usart_int.c...
+compiling system_stm32f10x.c...
+compiling core_cm3.c...
+compiling usart.c...
+compiling GLCD.c...
+linking...
+Program Size: Code=10964 RO-data=420 RW-data=5464 ZI-data=1968  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.002V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+linking...
+Program Size: Code=10964 RO-data=420 RW-data=5464 ZI-data=1968  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling main.c...
+App\main.c(63): warning:  #223-D: function "GLCD_init" declared implicitly
+App\main.c(65): warning:  #223-D: function "GLCD_clear" declared implicitly
+App\main.c(65): error:  #20: identifier "Navy" is undefined
+App\main.c(66): warning:  #223-D: function "GLCD_setBackColor" declared implicitly
+App\main.c(67): warning:  #223-D: function "GLCD_setTextColor" declared implicitly
+App\main.c(67): error:  #20: identifier "White" is undefined
+App\main.c(69): warning:  #223-D: function "GLCD_displayStringLn" declared implicitly
+App\main.c(69): error:  #20: identifier "Line0" is undefined
+App\main.c(70): error:  #20: identifier "Line1" is undefined
+Target not created
+Build target 'LibManagement'
+compiling main.c...
+linking...
+Program Size: Code=5236 RO-data=368 RW-data=68 ZI-data=1732  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling main.c...
+linking...
+Program Size: Code=5236 RO-data=368 RW-data=68 ZI-data=1732  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling main.c...
+linking...
+LibManagement.axf: Error: L6218E: Undefined symbol GLCD_clear (referred from main.o).
+LibManagement.axf: Error: L6218E: Undefined symbol GLCD_displayStringLn (referred from main.o).
+LibManagement.axf: Error: L6218E: Undefined symbol GLCD_init (referred from main.o).
+LibManagement.axf: Error: L6218E: Undefined symbol GLCD_setBackColor (referred from main.o).
+LibManagement.axf: Error: L6218E: Undefined symbol GLCD_setTextColor (referred from main.o).
+Target not created
+Build target 'LibManagement'
+compiling GLCD.c...
+linking...
+Program Size: Code=10964 RO-data=420 RW-data=5464 ZI-data=1968  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling usart.c...
+compiling GLCD.c...
+linking...
+Program Size: Code=10964 RO-data=420 RW-data=5464 ZI-data=1968  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling usart.c...
+compiling GLCD.c...
+Drivers\GLCD.c(388): warning:  #223-D: function "printf" declared implicitly
+linking...
+Program Size: Code=10964 RO-data=420 RW-data=5464 ZI-data=1968  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 1 Warning(s).
+Build target 'LibManagement'
+compiling GLCD.c...
+linking...
+Program Size: Code=10964 RO-data=420 RW-data=5464 ZI-data=1968  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Rebuild target 'LibManagement'
+assembling startup_stm32f10x_cl.s...
+compiling misc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+compiling main.c...
+compiling usart_int.c...
+compiling system_stm32f10x.c...
+compiling core_cm3.c...
+compiling usart.c...
+compiling GLCD.c...
+linking...
+Program Size: Code=10964 RO-data=420 RW-data=5464 ZI-data=1968  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.254V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling main.c...
+linking...
+Program Size: Code=5236 RO-data=368 RW-data=68 ZI-data=1732  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling GLCD.c...
+linking...
+Program Size: Code=5240 RO-data=368 RW-data=68 ZI-data=1732  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Rebuild target 'LibManagement'
+assembling startup_stm32f10x_cl.s...
+compiling misc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+compiling main.c...
+compiling usart_int.c...
+compiling system_stm32f10x.c...
+compiling core_cm3.c...
+compiling usart.c...
+compiling GLCD.c...
+linking...
+Program Size: Code=5240 RO-data=368 RW-data=68 ZI-data=1732  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling main.c...
+App\main.c(48): warning:  #223-D: function "init_display" declared implicitly
+linking...
+LibManagement.axf: Error: L6218E: Undefined symbol init_display (referred from main.o).
+Target not created
+Build target 'LibManagement'
+compiling main.c...
+linking...
+Program Size: Code=5240 RO-data=368 RW-data=68 ZI-data=1732  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling main.c...
+linking...
+LibManagement.axf: Error: L6218E: Undefined symbol init_display (referred from main.o).
+Target not created
+Build target 'LibManagement'
+compiling main.c...
+linking...
+Program Size: Code=10968 RO-data=420 RW-data=5464 ZI-data=1968  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling main.c...
+linking...
+Program Size: Code=5240 RO-data=368 RW-data=68 ZI-data=1732  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling GLCD.c...
+linking...
+Program Size: Code=5240 RO-data=368 RW-data=68 ZI-data=1732  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Rebuild target 'LibManagement'
+assembling startup_stm32f10x_cl.s...
+compiling misc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+compiling main.c...
+compiling usart_int.c...
+compiling system_stm32f10x.c...
+compiling core_cm3.c...
+compiling usart.c...
+compiling GLCD.c...
+linking...
+Program Size: Code=10960 RO-data=420 RW-data=5464 ZI-data=1968  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.254V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling GLCD.c...
+linking...
+Program Size: Code=10952 RO-data=420 RW-data=5464 ZI-data=1968  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling GLCD.c...
+linking...
+Program Size: Code=10932 RO-data=420 RW-data=5464 ZI-data=1968  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling main.c...
+compiling GLCD.c...
+linking...
+Program Size: Code=10964 RO-data=420 RW-data=5464 ZI-data=1968  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling main.c...
+linking...
+Program Size: Code=5240 RO-data=368 RW-data=68 ZI-data=1732  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling main.c...
+linking...
+Program Size: Code=10964 RO-data=420 RW-data=5464 ZI-data=1968  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling main.c...
+linking...
+Program Size: Code=5240 RO-data=368 RW-data=68 ZI-data=1732  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling main.c...
+linking...
+Program Size: Code=10964 RO-data=420 RW-data=5464 ZI-data=1968  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling main.c...
+linking...
+Program Size: Code=10960 RO-data=420 RW-data=5464 ZI-data=1968  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Rebuild target 'LibManagement'
+assembling startup_stm32f10x_cl.s...
+compiling misc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+compiling main.c...
+compiling usart_int.c...
+compiling system_stm32f10x.c...
+compiling core_cm3.c...
+compiling usart.c...
+compiling GLCD.c...
+linking...
+Program Size: Code=10960 RO-data=420 RW-data=5464 ZI-data=1968  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling GLCD.c...
+linking...
+Program Size: Code=7728 RO-data=368 RW-data=5452 ZI-data=1732  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Rebuild target 'LibManagement'
+assembling startup_stm32f10x_cl.s...
+compiling misc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+compiling main.c...
+compiling usart_int.c...
+compiling system_stm32f10x.c...
+compiling core_cm3.c...
+compiling usart.c...
+compiling GLCD.c...
+linking...
+Program Size: Code=7736 RO-data=368 RW-data=5452 ZI-data=1732  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling main.c...
+linking...
+Program Size: Code=7736 RO-data=368 RW-data=5452 ZI-data=1732  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.254V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling GLCD.c...
+linking...
+Program Size: Code=7748 RO-data=368 RW-data=5452 ZI-data=1732  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling GLCD.c...
+linking...
+Program Size: Code=7736 RO-data=368 RW-data=5452 ZI-data=1732  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.254V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling GLCD.c...
+linking...
+Program Size: Code=7752 RO-data=368 RW-data=5452 ZI-data=1732  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.254V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling GLCD.c...
+linking...
+Program Size: Code=7736 RO-data=368 RW-data=5452 ZI-data=1732  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+linking...
+Program Size: Code=7736 RO-data=368 RW-data=5452 ZI-data=1732  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling main.c...
+linking...
+Program Size: Code=7740 RO-data=368 RW-data=5452 ZI-data=1732  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.254V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.254V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling GLCD.c...
+Drivers\GLCD.c(215): warning:  #223-D: function "printf" declared implicitly
+linking...
+Program Size: Code=9792 RO-data=420 RW-data=5460 ZI-data=1972  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 1 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+compiling GLCD.c...
+Drivers\GLCD.c - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Rebuild target 'LibManagement'
+assembling startup_stm32f10x_cl.s...
+compiling misc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+compiling main.c...
+compiling usart_int.c...
+compiling system_stm32f10x.c...
+compiling core_cm3.c...
+compiling usart.c...
+compiling GLCD.c...
+linking...
+Program Size: Code=6576 RO-data=368 RW-data=5448 ZI-data=1728  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling main.c...
+.\Drivers\logo_RGB565.h(320): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=6576 RO-data=368 RW-data=5448 ZI-data=1728  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 1 Warning(s).
+Build target 'LibManagement'
+compiling main.c...
+.\Drivers\logo_RGB565.h(321): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=6576 RO-data=368 RW-data=5448 ZI-data=1728  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 1 Warning(s).
+Build target 'LibManagement'
+compiling main.c...
+.\Drivers\logo_RGB565.h(319): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=6576 RO-data=368 RW-data=5448 ZI-data=1728  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 1 Warning(s).
+Rebuild target 'LibManagement'
+assembling startup_stm32f10x_cl.s...
+compiling misc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+compiling main.c...
+.\Drivers\logo_RGB565.h(319): warning:  #1-D: last line of file ends without a newline
+compiling usart_int.c...
+compiling system_stm32f10x.c...
+compiling core_cm3.c...
+compiling usart.c...
+compiling GLCD.c...
+linking...
+Program Size: Code=6596 RO-data=7020 RW-data=5448 ZI-data=1728  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 1 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling main.c...
+linking...
+Program Size: Code=6596 RO-data=7020 RW-data=5448 ZI-data=1728  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Rebuild target 'LibManagement'
+assembling startup_stm32f10x_cl.s...
+compiling misc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+compiling main.c...
+compiling usart_int.c...
+compiling system_stm32f10x.c...
+compiling core_cm3.c...
+compiling usart.c...
+compiling GLCD.c...
+linking...
+Program Size: Code=6596 RO-data=7020 RW-data=5448 ZI-data=1728  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling main.c...
+linking...
+Program Size: Code=6604 RO-data=7020 RW-data=5448 ZI-data=1728  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling main.c...
+linking...
+Program Size: Code=6604 RO-data=7020 RW-data=5448 ZI-data=1728  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling main.c...
+linking...
+Program Size: Code=6596 RO-data=7020 RW-data=5448 ZI-data=1728  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling main.c...
+linking...
+Program Size: Code=6620 RO-data=7020 RW-data=5448 ZI-data=1728  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LibManagement'
+compiling main.c...
+linking...
+Program Size: Code=6620 RO-data=7020 RW-data=5448 ZI-data=1728  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.254V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling main.c...
+linking...
+Program Size: Code=6620 RO-data=7020 RW-data=5448 ZI-data=1728  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling main.c...
+linking...
+Program Size: Code=6648 RO-data=7020 RW-data=5448 ZI-data=1728  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling main.c...
+linking...
+Program Size: Code=6648 RO-data=7020 RW-data=5448 ZI-data=1728  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LibManagement'
+compiling main.c...
+linking...
+Program Size: Code=6648 RO-data=7020 RW-data=5448 ZI-data=1728  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LibManagement'
+compiling main.c...
+linking...
+Program Size: Code=6644 RO-data=7020 RW-data=5448 ZI-data=1728  
+FromELF: creating hex file...
+"LibManagement.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\Library management\\SourceCode\\Version_1\\LibManagement.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\Library management\SourceCode\Version_1\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.248V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
