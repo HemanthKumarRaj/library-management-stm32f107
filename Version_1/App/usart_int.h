@@ -26,7 +26,7 @@
 /* Exported functions ------------------------------------------------------- */
 void USART1_IRQHandler(void);
 void USART2_IRQHandler(void);
-uint16_t USART2_GetChar(void);
+uint16_t USART2_BufferCompare(uint8_t *data, uint8_t length);
 uint16_t USART1_GetChar(void);
 
 #endif

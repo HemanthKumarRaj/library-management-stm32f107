@@ -28,7 +28,7 @@
 /* Private define ------------------------------------------------------------*/
 
 /* Private macro -------------------------------------------------------------*/
-
+#define RFID_Debug 1;
 /* Private variables ---------------------------------------------------------*/
 
 /* Private function prototypes -----------------------------------------------*/
@@ -44,6 +44,8 @@ void init_display (void);
  ***********************************************************************/
 int main(void)
 {
+	uint16_t i;
+	uint16_t ReData;
 	SystemInit();
 	USART_Config();
 	init_display ();
@@ -51,9 +53,44 @@ int main(void)
 	USART1_Puts("This msg from USART1\n\r");
 	USART2_Puts("This msg from USART2\n\r");
 	
+	
 	while(1)
 	{
+#if 0	
 		
+		ReData = USART2_GetChar();
+		//USART2_Puts((unsigned char*)ReData);
+		USART_SendData(USART2, ReData);
+		
+#endif
+		
+#if 1
+		
+		
+		USART2_Puts("*STS#");
+		
+		GLCD_displayStringLn(Line7, "Sending: *STS#");
+		if (USART2_BufferCompare((uint8_t *)"*CP#", 4))
+		{
+			USART2_Puts("*R0802#");
+			
+			GLCD_displayStringLn(Line8, "Sending: *R0802#");
+			
+			if (USART2_BufferCompare((uint8_t *)"*RD08024344#", 12))
+				{
+					GLCD_displayStringLn(Line9, "Valid Person");
+					break;
+				}
+				else 
+				{
+					GLCD_displayStringLn(Line9, "Invalid Person");
+					break;
+				}
+					
+			}
+#endif		
+			
+			
 	}
 	
 }

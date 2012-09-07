@@ -17,6 +17,7 @@
 ***********************************************************************/
 #include "usart_int.h"
 #include "stm32f10x_conf.h"
+#include "usart.h"
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -42,7 +43,7 @@ uint8_t rxBufferOverflow2;
 uint16_t rxBuffer2[rxBufferSize2];
 uint16_t rxWriteIndex2, rxReadIndex2, rxCounter2;
 
-uint16_t Data;
+uint8_t ReceiveData1,ReceiveData2;
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/
 
@@ -61,8 +62,8 @@ void USART1_IRQHandler(void) //USART1_IRQHandler
 
   if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET) // Wait for Char
   {
-    Data = (USART_ReceiveData(USART1)  & 0x7F ); // Collect Char
-    rxBuffer1[rxWriteIndex1] = Data;
+    ReceiveData1 = (USART_ReceiveData(USART1)  & 0x7F ); // Collect Char
+    rxBuffer1[rxWriteIndex1] = ReceiveData1;
     if (++rxWriteIndex1 == rxBufferSize1) rxWriteIndex1 = 0;
    if (++rxCounter1 == rxBufferSize1)
       {
@@ -101,10 +102,11 @@ void USART2_IRQHandler(void) //USART1_IRQHandler
 
   if(USART_GetITStatus(USART2, USART_IT_RXNE) != RESET) // Wait for Char
   {
-    Data = (USART_ReceiveData(USART2)  & 0x7F ); // Collect Char
-    rxBuffer2[rxWriteIndex2] = Data;
+    ReceiveData2 = (USART_ReceiveData(USART2)  & 0x7F ); // Collect Char
+    rxBuffer2[rxWriteIndex2] = ReceiveData2;
+		USART_SendData( USART1, ReceiveData2);
     if (++rxWriteIndex2 == rxBufferSize2) rxWriteIndex2 = 0;
-   if (++rxCounter2 == rxBufferSize2)
+    if (++rxCounter2 == rxBufferSize2)
       {
       rxCounter2 = 0;
       rxBufferOverflow2 = 1;
@@ -120,17 +122,37 @@ void USART2_IRQHandler(void) //USART1_IRQHandler
   * @param  None
   * @retval None
   */
-uint16_t USART2_GetChar(void)
+uint16_t USART2_BufferCompare(uint8_t *data, uint8_t length)
 {
-  uint16_t data;
-  while (rxCounter2==0);
-  data = rxBuffer2[rxReadIndex2];
-  if (++rxReadIndex2 == rxBufferSize2) rxReadIndex2=0;
-  --rxCounter2;
-  return data;
-}
+  uint8_t i=0;
+	uint8_t Buffer_Data[12];
+	//rxReadIndex2 = 0;
+  while (length > 0 && rxCounter2 != 0)
+	{
+		
+			Buffer_Data[i] = rxBuffer2[rxReadIndex2];
+		
+			//USART_SendData( USART1, Buffer_Data[i]);
+			//USART1_Puts( "Data: ");
+			//USART_SendData( USART1, rxBuffer2[rxReadIndex2]);
+			
+			if(*data != Buffer_Data[i]) 
+        return 0;
+			
+			if (++rxReadIndex2 == rxBufferSize2) rxReadIndex2=0;
+			--rxCounter2;
+			--length;
+			data++;
+			i++;
+	}
+	if(length ==0 && rxCounter2 == 0)
+      return 1; 
+    else
+      return 0;	
+		
+		
+	}
 
 /*----------------------------------------------------
 *-------------------End of Code-----------------------
 *----------------------------------------------------*/
-
