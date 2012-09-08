@@ -20,7 +20,7 @@
 ### ADS-LD Output File: 'LibManagement.axf'
 ### ADS-LD Command File: 'LibManagement.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile 'LibManagement.lnp', Handle=0x00002200
+### Creating CmdFile 'LibManagement.lnp', Handle=0x00000510
 ### Writing '.lnp' file
 ### ADS-LD Command file 'LibManagement.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.
