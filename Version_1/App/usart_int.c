@@ -91,6 +91,16 @@ uint16_t USART1_GetChar(void)
   return data;
 }
 
+uint16_t USART2_GetChar(void)
+{
+  uint16_t data;
+  while (rxCounter2==0);
+  data = rxBuffer2[rxReadIndex2];
+  if (++rxReadIndex2 == rxBufferSize2) rxReadIndex2=0;
+  --rxCounter2;
+  return data;
+}
+
 /**
   * @brief  This function handles USART2 global interrupt request.
   * @param  None
@@ -127,10 +137,10 @@ uint16_t USART2_BufferCompare(uint8_t *data, uint8_t length)
   uint8_t i=0;
 	uint8_t Buffer_Data[12];
 	//rxReadIndex2 = 0;
-  while (length > 0 && rxCounter2 != 0)
+  while (length > 0 )
 	{
 		
-			Buffer_Data[i] = rxBuffer2[rxReadIndex2];
+			Buffer_Data[i] = USART2_GetChar();
 		
 			//USART_SendData( USART1, Buffer_Data[i]);
 			//USART1_Puts( "Data: ");
@@ -139,8 +149,7 @@ uint16_t USART2_BufferCompare(uint8_t *data, uint8_t length)
 			if(*data != Buffer_Data[i]) 
         return 0;
 			
-			if (++rxReadIndex2 == rxBufferSize2) rxReadIndex2=0;
-			--rxCounter2;
+			
 			--length;
 			data++;
 			i++;

@@ -78,12 +78,17 @@ int main(void)
 			
 			if (USART2_BufferCompare((uint8_t *)"*RD08024344#", 12))
 				{
-					GLCD_displayStringLn(Line9, "Valid Person");
+					GLCD_displayStringLn(Line9, "Person 1");
 					break;
 				}
-				else 
+			else if (USART2_BufferCompare((uint8_t *)"*RD08024142#", 12))
 				{
-					GLCD_displayStringLn(Line9, "Invalid Person");
+					GLCD_displayStringLn(Line9, "Persion 2");
+					break;
+				}
+			else if (USART2_BufferCompare((uint8_t *)"*RD08024143#", 12))
+				{
+					GLCD_displayStringLn(Line9, "Persion 3");
 					break;
 				}
 					
