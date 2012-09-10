@@ -21,6 +21,7 @@
 #include "usart_int.h"
 #include "logo_RGB565.h"
 #include "GLCD.h"
+#include <string.h>
 
 
 /* Private typedef -----------------------------------------------------------*/
@@ -30,7 +31,7 @@
 /* Private macro -------------------------------------------------------------*/
 #define RFID_Debug 1;
 /* Private variables ---------------------------------------------------------*/
-
+uint8_t SmartCardDataBuffer[12];
 /* Private function prototypes -----------------------------------------------*/
 void init_display (void);
 
@@ -70,34 +71,37 @@ int main(void)
 		USART2_Puts("*STS#");
 		
 		GLCD_displayStringLn(Line7, "Sending: *STS#");
+		USART2_SmartCardGet(4); //updating data
 		if (USART2_BufferCompare((uint8_t *)"*CP#", 4))
 		{
 			USART2_Puts("*R0802#");
 			
 			GLCD_displayStringLn(Line8, "Sending: *R0802#");
-			
+			USART2_SmartCardGet(12); //updating data
 			if (USART2_BufferCompare((uint8_t *)"*RD08024344#", 12))
 				{
+					GLCD_clearLn(Line9);
 					GLCD_displayStringLn(Line9, "Person 1");
-					break;
+					//break;
 				}
-			else if (USART2_BufferCompare((uint8_t *)"*RD08024142#", 12))
+			
+			if (USART2_BufferCompare((uint8_t *)"*RD08024142#", 12))
 				{
-					GLCD_displayStringLn(Line9, "Persion 2");
-					break;
+					GLCD_clearLn(Line9);
+					GLCD_displayStringLn(Line9, "Person 2");
+					//break;
 				}
-			else if (USART2_BufferCompare((uint8_t *)"*RD08024143#", 12))
+			
+			if (USART2_BufferCompare((uint8_t *)"*RD08024143#", 12))
 				{
-					GLCD_displayStringLn(Line9, "Persion 3");
-					break;
+					GLCD_clearLn(Line9);
+					GLCD_displayStringLn(Line9, "Person 3");
+					//break;
 				}
 					
 			}
 #endif		
-			
-			
-	}
-	
+		}
 }
 void init_display (void) 
 {

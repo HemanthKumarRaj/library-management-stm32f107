@@ -44,6 +44,10 @@ uint16_t rxBuffer2[rxBufferSize2];
 uint16_t rxWriteIndex2, rxReadIndex2, rxCounter2;
 
 uint8_t ReceiveData1,ReceiveData2;
+
+uint8_t Buffer_Data[12];
+extern uint8_t SmartCardDataBuffer[12];
+
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/
 
@@ -135,25 +139,21 @@ void USART2_IRQHandler(void) //USART1_IRQHandler
 uint16_t USART2_BufferCompare(uint8_t *data, uint8_t length)
 {
   uint8_t i=0;
-	uint8_t Buffer_Data[12];
+	
 	//rxReadIndex2 = 0;
   while (length > 0 )
 	{
 		
-			Buffer_Data[i] = USART2_GetChar();
-		
-			//USART_SendData( USART1, Buffer_Data[i]);
-			//USART1_Puts( "Data: ");
-			//USART_SendData( USART1, rxBuffer2[rxReadIndex2]);
-			
+			//Buffer_Data[i] = USART2_GetChar();
+				
 			if(*data != Buffer_Data[i]) 
         return 0;
-			
 			
 			--length;
 			data++;
 			i++;
 	}
+
 	if(length ==0 && rxCounter2 == 0)
       return 1; 
     else
@@ -161,7 +161,24 @@ uint16_t USART2_BufferCompare(uint8_t *data, uint8_t length)
 		
 		
 	}
-
+/**
+  * @brief   
+  * @param  None
+  * @retval None
+  */
+void USART2_SmartCardGet(uint8_t length)
+{
+  uint8_t i=0;
+	
+	//rxReadIndex2 = 0;
+	while (length>0)
+	{
+		Buffer_Data[i] = USART2_GetChar();
+		--length;
+		i++;
+	}		
+		
+	}
 /*----------------------------------------------------
 *-------------------End of Code-----------------------
 *----------------------------------------------------*/
