@@ -15,3 +15,4 @@ main.o: .\Drivers\usart.h
 main.o: App\usart_int.h
 main.o: .\Drivers\logo_RGB565.h
 main.o: .\Drivers\GLCD.h
+main.o: C:\Keil\ARM\RV31\Inc\string.h
