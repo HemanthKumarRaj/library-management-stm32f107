@@ -119,7 +119,7 @@ void USART2_IRQHandler(void) //USART1_IRQHandler
     ReceiveData2 = (USART_ReceiveData(USART2)  & 0x7F ); // Collect Char
     //rxBuffer2[rxWriteIndex2] = ReceiveData2;
 		Buffer_Data[rxIndex] = ReceiveData2;
-		//USART_SendData( USART1,Buffer_Data[rxIndex]);
+		USART_SendData( USART1,Buffer_Data[rxIndex]);
 		rxIndex++;
 		if (Buffer_Data[rxIndex-1] == '#')
 		{
