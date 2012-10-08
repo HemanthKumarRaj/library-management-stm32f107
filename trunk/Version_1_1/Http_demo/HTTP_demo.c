@@ -1,141 +1,77 @@
-/**********************************************************************
-* $Id$		main.c					2012-07-02
-*//**
-* @file		main.c
-* @brief	
-* @MCU		STM32f107VC
-* @version	1.0
-* @date		6. Sept. 2012
-* @Company   VBEB Corp,.Ltd
-* @Website    http://www.vbeb.vn
-* @author	Sang Mai - IT Training Assistance - sang.mai@vbeb.vn 
-*
-* @References:
-*
-* All rights reserved.
-*
-***********************************************************************/
+/*----------------------------------------------------------------------------
+ *      RL-ARM - TCPnet
+ *----------------------------------------------------------------------------
+ *      Name:    HTTP_DEMO.C
+ *      Purpose: HTTP Server demo example
+ *----------------------------------------------------------------------------
+ *      This code is part of the RealView Run-Time Library.
+ *      Copyright (c) 2004-2009 KEIL - An ARM Company. All rights reserved.
+ *---------------------------------------------------------------------------*/
+
+#include <stdio.h>
+#include <RTL.h>
+#include <Net_Config.h>
 #include "stm32f10x.h"
 #include "stm32f10x_conf.h"
 #include "usart.h"
 #include "usart_int.h"
-#include "logo_RGB565.h"
 #include "GLCD.h"
+#include "logo_RGB565.h"
 #include <string.h>
-#include <stdio.h>
-#include <RTL.h>
-#include <Net_Config.h>
 
-/* Private typedef -----------------------------------------------------------*/
-
-/* Private define ------------------------------------------------------------*/
-
+BOOL LEDrun;
+BOOL LCDupdate;
 BOOL tick;
+U32  dhcp_tout;
 U8 tcp_soc;
 U8 soc_state;
 BOOL wait_ack;
-/* Private macro -------------------------------------------------------------*/
-#define RFID_Debug 1;
-/* Private variables ---------------------------------------------------------*/
-uint8_t SmartCardDataBuffer[12];
-/* Private function prototypes -----------------------------------------------*/
+U8   lcd_text[2][16+1] = {" ",                /* Buffer for LCD text         */
+                          "Waiting for DHCP"};
+
+#define Connected 1
+#define Disconnected 0
+uint8_t connection_Flag;
+char *data1_buf = "Hello The World!!";
+static U8 rem_IP[4] = {192,168,1,21};
+extern LOCALM localm[];                       /* Local Machine Settings      */
+#define MY_IP localm[NETIF_ETH].IpAdr
+#define DHCP_TOUT   50                        /* DHCP timeout 5 seconds      */
+#define msgLength 5
+extern uint16_t ASCII_Table[];
+
+static void init_io (void);
 void init_display (void);
-void delay (unsigned int cnt); 
 void send_data (U8 *data_buf, U8 data_length); 
 U16 tcp_callback (U8 soc, U8 event, U8 *ptr, U16 par);
-/* Private functions ---------------------------------------------------------*/
+/*--------------------------- init ------------------------------------------*/
 
+static void init () {
+  /* Add System initialisation code here */ 
 
-/************************************************************************
- * @brief 	main function	
- * @param[in]	None
- * @return		None
- ***********************************************************************/
-int main(void)
-{
-	uint16_t i;
-	uint16_t ReData;
-	SystemInit();
+  init_io ();
+  init_display ();
+  init_TcpNet ();
 	USART_Config();
-	init_display ();
-
-	USART1_Puts("This msg from USART1\n\r");
-	USART2_Puts("This msg from USART2\n\r");
-	
-	tcp_soc = tcp_get_socket (TCP_TYPE_CLIENT, 0, 120, tcp_callback);
-  soc_state = 0;
-	
-	while(1)
-	{
-#if 0	
-		
-		ReData = USART2_GetChar();
-		//USART2_Puts((unsigned char*)ReData);
-		USART_SendData(USART2, ReData);
-		
-#endif
-		
-#if 1
-		
-		
-		USART2_Puts("*STS#");
-		delay(100);
-		GLCD_displayStringLn(Line7, "Sending: *STS#");
-		//USART2_SmartCardGet(4); //updating data
-		if (USART2_BufferCompare((uint8_t *)"*CP#", 4))
-		{
-			USART2_Puts("*R0802#");
-			
-			GLCD_displayStringLn(Line8, "Sending: *R0802#");
-			//USART2_SmartCardGet(12); //updating data
-			delay(100);
-			if (USART2_BufferCompare((uint8_t *)"*RD08024344#", 12))
-				{
-					GLCD_clearLn(Line9);
-					GLCD_displayStringLn(Line9, "Person 1");
-					break;
-				}
-			
-			if (USART2_BufferCompare((uint8_t *)"*RD08024142#", 12))
-				{
-					GLCD_clearLn(Line9);
-					GLCD_displayStringLn(Line9, "Person 2");
-					break;
-				}
-			
-			if (USART2_BufferCompare((uint8_t *)"*RD08024143#", 12))
-				{
-					GLCD_clearLn(Line9);
-					GLCD_displayStringLn(Line9, "Person 3");
-					break;
-				}
-			
-					
-			}
-#endif		
-		}
+  /* Setup and enable the SysTick timer for 100ms. */
+  SysTick->LOAD = (25000000 / 10) - 1;
+  SysTick->CTRL = 0x05;
 }
-void init_display (void) 
-{
-  /* LCD Module init */
 
-  GLCD_init();
 
-  GLCD_clear(Navy);
-  GLCD_setBackColor(Navy);
-  GLCD_setTextColor(White);
-    
-  GLCD_displayStringLn(Line0, "       VBEB Co.,Ltd");
-	GLCD_displayStringLn(Line1, "           -=*=-");
-  GLCD_displayStringLn(Line3, "Libarary Management");
-	GLCD_displayStringLn(Line4, "      Center");
-	GLCD_displayStringLn(Line6, "    Version 1.0");
 
-  GLCD_bitmap (5, 10, 95, 35, VBEBLogo); 
+/*--------------------------- timer_poll ------------------------------------*/
 
-//  upd_display ();
+static void timer_poll () {
+  /* System tick timer running in poll mode */
 
+  if (SysTick->CTRL & 0x10000) {
+    /* Timer tick every 100 ms */
+    timer_tick ();
+    tick = __TRUE;
+  }
 }
+
 void delay (unsigned int cnt) 
 {
 
@@ -144,6 +80,180 @@ void delay (unsigned int cnt)
   for (i=1;i<=cnt; i++)
   	for (j=1;j<10000;j++);
 }
+/*--------------------------- init_io ---------------------------------------*/
+
+static void init_io () {
+
+  /* Set the clocks. */
+  SystemInit();
+  RCC->APB2ENR |= 0x00000279;
+
+  /* Configure the GPIO for Push Buttons */
+  GPIOB->CRH &= 0xFFFFFF0F;
+  GPIOB->CRH |= 0x00000040;
+  GPIOC->CRH &= 0xFFF0FFFF;
+  GPIOC->CRH |= 0x00040000;
+
+  /* Configure the GPIO for LEDs. */
+  GPIOD->CRL &= 0xFFF00FFF;
+  GPIOD->CRL |= 0x00033000;
+  GPIOD->CRH &= 0xFF0FFFFF;
+  GPIOD->CRH |= 0x00300000;
+  GPIOE->CRH &= 0xF0FFFFFF;
+  GPIOE->CRH |= 0x03000000;
+
+ 
+}
+
+
+/*--------------------------- fputc -----------------------------------------*/
+
+int fputc (int ch, FILE *f)  {
+  /* Debug output to serial port. */
+
+  if (ch == '\n')  {
+    while (!(USART2->SR & 0x0080));
+    USART2->DR = 0x0D;
+  }
+  while (!(USART2->SR & 0x0080));
+  USART2->DR = (ch & 0xFF);
+  return (ch);
+}
+
+
+
+/*--------------------------- get_button ------------------------------------*/
+
+U8 get_button (void) 
+{
+  /* Read ARM Digital Input */
+  U32 val = 0;
+
+  if ((GPIOB->IDR & (1 << 9)) == 0) {
+    /* Key button */
+    //val |= 0x01;
+		val =1;
+		
+  }
+  if ((GPIOC->IDR & (1 << 13)) == 0) {
+    /* Wakeup button */
+    //val |= 0x02;
+		val =2; 
+  }
+  return (val);
+}
+
+
+/*--------------------------- blink_led -------------------------------------*/
+
+static void blink_led () 
+{
+  /* Blink the LEDs on an eval board */
+  const U8 led_val[8] = { 0x01,0x03,0x07,0x0F,0x0E,0x0C,0x08,0x00 };
+  static U32 cnt;
+
+  if (tick == __TRUE) {
+    /* Every 100 ms */
+    tick = __FALSE;
+    if (LEDrun == __TRUE) {
+      LED_out (led_val[cnt]);
+      if (++cnt >= sizeof(led_val)) {
+        cnt = 0;
+      }
+    }
+    if (LCDupdate == __TRUE) {
+      //upd_display ();
+    }
+  }
+}
+
+/*---------------------------------------------------------------------------*/
+
+int main (void) 
+{
+  /* Main Thread of the TcpNet */
+	int i=1;
+	U32 buttonget;
+  init ();
+	
+ // printf ("Program started\n");
+  //LEDrun = __TRUE;
+  ///dhcp_tout = DHCP_TOUT;
+
+  tcp_soc = tcp_get_socket (TCP_TYPE_CLIENT, 0, 120, tcp_callback);
+  soc_state = 0;
+	USART1_Puts("This msg from USART1\n\r");
+	//USART2_Puts("This msg from USART2\n\r");
+	//tcp_connect (tcp_soc, rem_IP, 2020, 0);
+	//send_datalog ();
+	//send_data ();
+	while (1) 
+		{
+			timer_poll ();
+			main_TcpNet ();
+			buttonget = get_button();
+			//tcp_connect (tcp_soc, rem_IP, 2020, 0);
+								
+#if 1
+						
+		if ( buttonget == 2)
+			{
+				
+				tcp_connect (tcp_soc, rem_IP, 2020, 0);
+			  send_data ("SANG",4);
+				
+			}
+			
+		USART2_Puts("*STS#");
+		delay(200);
+		GLCD_displayStringLn(Line7, "Sending: *STS#");
+		if (USART2_BufferCompare((uint8_t *)"*CP#", 4))
+		{
+			USART2_Puts("*R0802#");
+			
+			//GLCD_displayStringLn(Line8, "Sending: *R0802#");
+			delay(200);
+			
+			if (USART2_BufferCompare((uint8_t *)"*RD08024344#", 12))
+				{
+					GLCD_clearLn(Line9);
+					GLCD_displayStringLn(Line9, "Person 1");
+					tcp_connect (tcp_soc, rem_IP, 2020, 0);
+					send_data ("Person 1",8);
+					delay(200);
+					while (USART2_BufferCompare((uint8_t *)"*CR#", 4) == 0); //waiting until card is removed
+					
+					//break;
+				}
+			
+			if (USART2_BufferCompare((uint8_t *)"*RD08024142#", 12))
+				{
+					GLCD_clearLn(Line9);
+					GLCD_displayStringLn(Line9, "Person 2");
+					tcp_connect (tcp_soc, rem_IP, 2020, 0);
+					send_data ("Person 2",8);
+					delay(200);
+					while (USART2_BufferCompare((uint8_t *)"*CR#", 4) == 0); //waiting until card is removed
+					//break;
+				}
+			
+			if (USART2_BufferCompare((uint8_t *)"*RD08024143#", 12))
+				{
+					GLCD_clearLn(Line9);
+					GLCD_displayStringLn(Line9, "Person 3");
+					tcp_connect (tcp_soc, rem_IP, 2020, 0);
+					send_data ("Person 3",8);
+					delay(200);
+					while (USART2_BufferCompare((uint8_t *)"*CR#", 4) == 0); //waiting until card is removed
+					//break;
+				}
+			
+					
+			}
+#endif	
+	  }
+}
+
 void send_data (U8 *data_buf, U8 data_length) 
 {
   
@@ -225,7 +335,28 @@ U16 tcp_callback (U8 soc, U8 event, U8 *ptr, U16 par)
   }
   return (0);
 }
-	
-/*----------------------------------------------------
-*-------------------End of Code-----------------------
-*----------------------------------------------------*/
+void init_display (void) 
+{
+  /* LCD Module init */
+
+  GLCD_init();
+
+  GLCD_clear(Navy);
+  GLCD_setBackColor(Navy);
+  GLCD_setTextColor(White);
+    
+  GLCD_displayStringLn(Line0, "       VBEB Co.,Ltd");
+	GLCD_displayStringLn(Line1, "           -=*=-");
+  //GLCD_displayStringLn(Line3, "Libarary Management");
+	//GLCD_displayStringLn(Line4, "      Center");
+	GLCD_displayStringLn(Line6, "    Version 1.0");
+
+  GLCD_bitmap (5, 10, 95, 35, VBEBLogo); 
+
+//  upd_display ();
+
+}			
+
+/*----------------------------------------------------------------------------
+ * end of file
+ *---------------------------------------------------------------------------*/
