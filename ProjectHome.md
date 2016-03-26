@@ -1,0 +1,1 @@
+This project using STM32f107VC to manage library by using RFID and Smart card. Using TCP protocol.
